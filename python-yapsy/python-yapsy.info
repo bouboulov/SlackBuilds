@@ -1,4 +1,4 @@
-PRGNAM="python-yapsi"
+PRGNAM="python-yapsy"
 VERSION="1.12.2"
 HOMEPAGE="https://yapsy.sourceforge.net/"
 DOWNLOAD="https://files.pythonhosted.org/packages/f1/4c/c771fbc77045a45678cdd78f57fd4006259767c363c1f884071debd200f7/Yapsy-1.12.2.tar.gz"
