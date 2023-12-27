@@ -1,0 +1,11 @@
+PRGNAM="python3-material-color-utilities-python"
+VERSION="0.1.5"
+HOMEPAGE="https://pypi.org/project/material-color-utilities-python/"
+DOWNLOAD="https://files.pythonhosted.org/packages/ef/da/a542b6e654eb308f32ca788ee9d9f77e2f521007e5cf7368a24ca420b760/material-color-utilities-python-0.1.5.tar.gz"
+MD5SUM="06646363a6e542f41afa755bd1170d0b"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES=""
+MAINTAINER=""
+EMAIL=""
+
