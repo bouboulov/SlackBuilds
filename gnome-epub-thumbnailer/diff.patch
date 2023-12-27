@@ -1,0 +1,11 @@
+--- gnome-epub-thumbnailer.c	2022-09-29 13:22:04.000000000 +0200
++++ gnome-epub-thumbnailer-1.7/src/gnome-epub-thumbnailer.c	2023-12-27 21:45:08.939448960 +0100
+@@ -118,7 +118,7 @@
+ 
+ 	doc = xmlParseMemory (data, length);
+ 	if (doc == NULL)
+-		doc = xmlRecoverMemory (data, length);
++	  doc = xmlReadMemory (data, length, NULL, NULL, XML_PARSE_NONET | XML_PARSE_RECOVER);
+ 
+ 	if(!doc ||
+ 	   !doc->children ||
