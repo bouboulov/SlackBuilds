@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+         |-----handy-ruler------------------------------------------------------|
+gradience: Gradience (Change the look of Adwaita, with ease)
+gradience:
+gradience: Gradience is a tool for customizing Libadwaita applications and
+gradience: the adw-gtk3 theme. The main features of Gradience include the
+gradience: following: Changing any color of Adwaita theme Applying Material 3
+gradience: color scheme from wallpaper Usage of other users presets Changing
+gradience: advanced options with CSS Extending functionality using plugins
+gradience:
+gradience:
+gradience:
+gradience: https://github.com/GradienceTeam/Gradience
