@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                             |-----handy-ruler------------------------------------------------------|
+python3-flake8-comprehensions: python3-flake8-comprehensions (A flake8 plugin to help you write better list/set/dict comprehensions.)
+python3-flake8-comprehensions:
+python3-flake8-comprehensions: A flake8 plugin to help you write better list/set/dict
+python3-flake8-comprehensions: comprehensions.
+python3-flake8-comprehensions:
+python3-flake8-comprehensions:
+python3-flake8-comprehensions:
+python3-flake8-comprehensions:
+python3-flake8-comprehensions:
+python3-flake8-comprehensions:
+python3-flake8-comprehensions: Home: https://pypi.org/project/flake8-comprehensions/
