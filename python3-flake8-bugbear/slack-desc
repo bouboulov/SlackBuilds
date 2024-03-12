@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                      |-----handy-ruler------------------------------------------------------|
+python3-flake8-bugbear: python3-flake8-bugbear (A plugin for Flake8)
+python3-flake8-bugbear:
+python3-flake8-bugbear: A plugin for flake8 finding likely bugs and design problems in
+python3-flake8-bugbear: your program. Contains warnings that don’t belong in pyflakes
+python3-flake8-bugbear: and pycodestyle. It is felt that these lints don’t belong in the
+python3-flake8-bugbear: main Python tools as they are very opinionated and do not have a
+python3-flake8-bugbear: PEP or standard behind them. Due to flake8 being designed to be
+python3-flake8-bugbear: extensible, the original creators of these lints believed that a
+python3-flake8-bugbear: plugin was the best route. This has resulted in better development
+python3-flake8-bugbear: velocity for contributors and adaptive deployment for flake8 users.
+python3-flake8-bugbear: Home: https://pypi.org/project/flake8-bugbear/
