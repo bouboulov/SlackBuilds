@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                      |-----handy-ruler------------------------------------------------------|
+gnome-epub-thumbnailer: gnome-epub-thumbnailer (Gnome epub thumbnailer)
+gnome-epub-thumbnailer:
+gnome-epub-thumbnailer: The GNOME EPUB Thumbnailer provides thumbnail generation support
+gnome-epub-thumbnailer: for EPUB files in the GNOME desktop environment. It allows you to
+gnome-epub-thumbnailer: view EPUB file thumbnails directly in your file manager,enhancing
+gnome-epub-thumbnailer: the overall user experience when dealing with EPUB documents.
+gnome-epub-thumbnailer:
+gnome-epub-thumbnailer:
+gnome-epub-thumbnailer:
+gnome-epub-thumbnailer:
+gnome-epub-thumbnailer: Home: https://gitlab.gnome.org/GNOME/gnome-epub-thumbnailer/
