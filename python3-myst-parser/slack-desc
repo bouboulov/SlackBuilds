@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                   |-----handy-ruler------------------------------------------------------|
+python3-myst-parser: python3-myst-parser (MyST is a rich and extensible flavor of Markdown)
+python3-myst-parser:
+python3-myst-parser: MyST is a flavor of markdown that is designed for simplicity,
+python3-myst-parser: flexibility, and extensibility. This repository serves as the
+python3-myst-parser: reference implementation of MyST Markdown, as well as a collection of
+python3-myst-parser: tools to support working with MyST in Python and Sphinx. It contains
+python3-myst-parser: an extended CommonMark-compliant parser using markdown-it-py, as
+python3-myst-parser: well as a Sphinx extension that allows you to write MyST Markdown
+python3-myst-parser: in Sphinx.
+python3-myst-parser:
+python3-myst-parser: Home: https://pypi.org/project/myst-parser/
