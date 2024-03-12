@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+            |-----handy-ruler------------------------------------------------------|
+python-yapsy: python-yapsy (Yet another plugin system)
+python-yapsy:
+python-yapsy: Yapsy is a small library implementing the core mechanisms needed to
+python-yapsy: build a plugin system into a wider application.  The main purpose
+python-yapsy: is to depend only on Python’s standard libraries and to implement
+python-yapsy: only the basic functionalities needed to detect, load and keep
+python-yapsy: track of several plugins. It supports both Python 2 and 3.
+python-yapsy:
+python-yapsy:
+python-yapsy:
+python-yapsy: Home: https://yapsy.sourceforge.net/
