@@ -1,0 +1,23 @@
+Dependencies require some various versions.
+
+You might want to check :
+
+coverage[toml]>=5.3
+flask
+myst-parser
+pytest>=6.0
+pytest-cov
+sphinx>=3.0
+sphinx-autobuild
+sphinx-tabs
+uv; python_version>='3.8'
+witchhazel
+
+and
+
+argcomplete >=1.9.4,<3.0
+colorlog >=2.6.1,<7.0.0
+jinja2
+pytest
+tox<4.0.0
+virtualenv >=20.14.1
