@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                   |-----handy-ruler------------------------------------------------------|
+simple-novel-reader: simple-novel-reader (CLI light novel reader written in Python for Linux.)
+simple-novel-reader:
+simple-novel-reader: CLI light novel reader written in Python for Linux. Features: save
+simple-novel-reader: reading progress and quickmarks of a book upon exit, starting
+simple-novel-reader: program without argument will open last read book, quickmarks,
+simple-novel-reader: bookmarks, colored dialogs, dual page view.
+simple-novel-reader:
+simple-novel-reader:
+simple-novel-reader:
+simple-novel-reader:
+simple-novel-reader: Home: https://pypi.org/project/simple-novel-reader/
