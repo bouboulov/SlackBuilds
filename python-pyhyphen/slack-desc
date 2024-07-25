@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+               |-----handy-ruler------------------------------------------------------|
+python-pyhyphen: python-pyhyphen (Pythonic interface to the hyphenation library)
+python-pyhyphen:
+python-pyhyphen: Pyhyphen is a pythonic interface to the hyphenation library
+python-pyhyphen: used in projects such as LibreOffice and the Mozilla suite. It
+python-pyhyphen: comes with tools to download, install and uninstall hyphenation
+python-pyhyphen: dictionaries from LibreOffice’s Git repository. PyHyphen provides
+python-pyhyphen: the hyphen package. hyphen.textwrap2 is a modified version of the
+python-pyhyphen: familiar textwrap module which wraps a text with hyphenation given
+python-pyhyphen: a specified width.
+python-pyhyphen:
+python-pyhyphen: Home: https://pypi.org/project/PyHyphen/
