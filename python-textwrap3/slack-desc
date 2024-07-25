@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.  Line
+# up the first '|' above the ':' following the base package name, and the '|'
+# on the right side marks the last column you can put a character in.  You must
+# make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':'.
+
+                |-----handy-ruler------------------------------------------------------|
+python-textwrap3: python-textwrap3 (Compatibility back-port of Python 3.6’s textwrap)
+python-textwrap3:
+python-textwrap3: textwrap3 is a compatibility back-port of Python 3.6’s textwrap
+python-textwrap3: module that supports Python 2.6 forward. (Though honestly, if
+python-textwrap3: you’re not already using at least 2.7, you’re way behind
+python-textwrap3: the times!)  This makes a few new APIs such as shorten and the
+python-textwrap3: max_lines parameter available in a compatible way to all Python
+python-textwrap3: versions typically in current use.
+python-textwrap3:
+python-textwrap3:
+python-textwrap3: Home: https://pypi.org/project/textwrap3/ 
