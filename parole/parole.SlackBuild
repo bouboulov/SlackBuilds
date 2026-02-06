@@ -1,0 +1,104 @@
+#!/bin/bash
+
+# SlackBuild for parole
+# 2026 bouboulov
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version, with the following exception:
+# the text of the GPL license may be omitted.
+
+# This program is distributed in the hope that it will be useful, but
+# without any warranty; without even the implied warranty of
+# merchantability or fitness for a particular purpose. Compiling,
+# interpreting, executing or merely reading the text of the program
+# may result in lapses of consciousness and/or very being, up to and
+# including the end of all existence and the Universe as we know it.
+# See the GNU General Public License for more details.
+
+# You may have received a copy of the GNU General Public License along
+# with this program (most likely, a file named COPYING).  If not, see
+# <http://www.gnu.org/licenses/>.
+
+PRGNAM=parole
+VERSION=4.20.0
+SRCNAM=parole
+BUILD=${BUILD:-1}
+TAG=${TAG:-_bbv}
+
+ARCH=${ARCH:-x86_64}
+
+CWD=$(pwd)
+TMP=${TMP:-/tmp/SBo}
+PKG=$TMP/package-$PRGNAM
+
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "x86_64" ]; then
+  SLKCFLAGS="-O2 -fPIC"
+  LIBDIRSUFFIX="64"
+else
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+fi
+
+set -e
+
+rm -rf $PKG
+mkdir -p $TMP $PKG
+cd $TMP || exit 1
+
+rm -rf $SRCNAM-$VERSION
+tar xf $CWD/$SRCNAM-$VERSION.tar.?z* || exit 1
+cd $SRCNAM-$VERSION || exit 1
+
+chown -R root:root .
+find . -perm 777 -exec chmod 755 {} \;
+find . -perm 666 -exec chmod 644 {} \;
+
+export CFLAGS="$SLKCFLAGS"
+export CXXFLAGS="$SLKCFLAGS"
+
+mkdir -p meson-build
+cd meson-build || exit 1
+
+meson setup .. \
+  --prefix=/usr \
+  --libdir=lib${LIBDIRSUFFIX} \
+  --buildtype=release \
+  --wrap-mode=nodownload \
+  --auto-features=enabled
+
+ninja
+DESTDIR=$PKG ninja install
+
+cd ..
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+
+for f in AUTHORS COPYING ChangeLog NEWS README.md THANKS TODO; do
+  [ -f "$TMP/$SRCNAM-$VERSION/$f" ] && \
+    cp -a "$TMP/$SRCNAM-$VERSION/$f" $PKG/usr/doc/$PRGNAM-$VERSION
+done
+
+cat $CWD/$PRGNAM.SlackBuild \
+  > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+find $PKG -type f -perm 777 -exec chmod 755 {} \;
+find $PKG -type f -perm 666 -exec chmod 644 {} \;
+
+strip --strip-unneeded \
+  $PKG/usr/bin/* 2>/dev/null || true
+
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+
+cd $PKG || exit 1
+/sbin/makepkg -l y -c n \
+  $TMP/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.txz
